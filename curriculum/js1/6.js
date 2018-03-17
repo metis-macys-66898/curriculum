@@ -12,7 +12,7 @@ const solution = (a, sum=0, divisor = a-1) => {
   if (a % divisor === 0 ) {
      sum += divisor;
 }
-  return solution (a, sum, divisor -=1 );
+  return solution (a, sum, divisor - 1 );
 
 };
 
