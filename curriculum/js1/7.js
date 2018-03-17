@@ -5,8 +5,15 @@
  * @returns {boolean}
  */
 
-const solution = (a) => {
-  return 0;
+const solution = (a, divisor = 2) => {
+  if (a <= 1 || (a % divisor === 0 && a != 2) ) {
+     return false;
+  } 
+  if (divisor >= a - 1) {
+     return true;
+  }
+  return solution (a, divisor + 1) ;
+
 };
 
 module.exports = {
